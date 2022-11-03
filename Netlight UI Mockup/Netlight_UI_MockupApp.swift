@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Netlight_UI_MockupApp: App {
+    
+    var modelData = MockModel() as ModelData
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(modelData)
         }
     }
 }

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var model: ModelData
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -40,27 +43,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(MockModel() as ModelData)
     }
 }
-
-/*
- .padding()
- .navigationTitle("Test")
- .toolbar {
- ToolbarItem(placement: .navigationBarLeading) {
- Button {
- 
- } label: {
- Text("Logout").foregroundColor(.purple)
- }
- }
- ToolbarItem(placement: .navigationBarTrailing) {
- Button {
- 
- } label: {
- Image(systemName: "person").foregroundColor(.purple)
- }
- }
- }
- */

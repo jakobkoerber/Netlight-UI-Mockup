@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CoursesByTagsGridView: View {
+    
+    @EnvironmentObject var model: ModelData
+    
     var body: some View {
         VStack {
             HStack {
@@ -19,13 +22,9 @@ struct CoursesByTagsGridView: View {
                     Text("View all").foregroundColor(Color("NetlightPurple"))
                 }
             }
-            LazyVGrid(columns: [GridItem(), GridItem()]) {
-                ForEach(0..<10) {
-                    Text("Item \($0)")
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
-                        .frame(width: 150, height: 50)
-                        .background(Color("NetlightPurple"))
+            LazyVGrid(columns: [GridItem(spacing: 20), GridItem()], spacing: 20) {
+                ForEach(0..<10) { _ in
+                   CourseByTagRectangleView()
                 }
             }
         }.padding()
@@ -34,6 +33,6 @@ struct CoursesByTagsGridView: View {
 
 struct CoursesByTagsGridView_Previews: PreviewProvider {
     static var previews: some View {
-        CoursesByTagsGridView()
+        CoursesByTagsGridView().environmentObject(MockModel())
     }
 }

@@ -13,7 +13,13 @@
 		281FBFC3291432FC00D005F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281FBFC2291432FC00D005F0 /* Preview Assets.xcassets */; };
 		281FBFCE29143B7600D005F0 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFCD29143B7600D005F0 /* CircularProgressView.swift */; };
 		281FBFD029143C0600D005F0 /* RecommendedCoursesHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFCF29143C0600D005F0 /* RecommendedCoursesHorizontalView.swift */; };
-		281FBFD229143C6C00D005F0 /* CoursesByTagsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD129143C6C00D005F0 /* CoursesByTagsGrid.swift */; };
+		281FBFD229143C6C00D005F0 /* CoursesByTagsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD129143C6C00D005F0 /* CoursesByTagsGridView.swift */; };
+		281FBFD42914753C00D005F0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD32914753C00D005F0 /* ModelData.swift */; };
+		281FBFD62914755B00D005F0 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD52914755B00D005F0 /* Course.swift */; };
+		281FBFD82914761C00D005F0 /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD72914761C00D005F0 /* MockModel.swift */; };
+		281FBFDD2914785400D005F0 /* CourseRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFDC2914785400D005F0 /* CourseRectangleView.swift */; };
+		281FBFDF29147B9100D005F0 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFDE29147B9100D005F0 /* Tags.swift */; };
+		281FBFE129147CE000D005F0 /* CourseByTagRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFE029147CE000D005F0 /* CourseByTagRectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +30,13 @@
 		281FBFC2291432FC00D005F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		281FBFCD29143B7600D005F0 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		281FBFCF29143C0600D005F0 /* RecommendedCoursesHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCoursesHorizontalView.swift; sourceTree = "<group>"; };
-		281FBFD129143C6C00D005F0 /* CoursesByTagsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesByTagsGrid.swift; sourceTree = "<group>"; };
+		281FBFD129143C6C00D005F0 /* CoursesByTagsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesByTagsGridView.swift; sourceTree = "<group>"; };
+		281FBFD32914753C00D005F0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		281FBFD52914755B00D005F0 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		281FBFD72914761C00D005F0 /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
+		281FBFDC2914785400D005F0 /* CourseRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRectangleView.swift; sourceTree = "<group>"; };
+		281FBFDE29147B9100D005F0 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
+		281FBFE029147CE000D005F0 /* CourseByTagRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseByTagRectangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +71,12 @@
 			children = (
 				281FBFBB291432FC00D005F0 /* Netlight_UI_MockupApp.swift */,
 				281FBFBD291432FC00D005F0 /* ContentView.swift */,
+				281FBFCD29143B7600D005F0 /* CircularProgressView.swift */,
+				281FBFDA2914780C00D005F0 /* RecommendationScoller */,
+				281FBFDB2914782300D005F0 /* CoursesByTag */,
+				281FBFD9291477CE00D005F0 /* Model */,
 				281FBFBF291432FC00D005F0 /* Assets.xcassets */,
 				281FBFC1291432FC00D005F0 /* Preview Content */,
-				281FBFCD29143B7600D005F0 /* CircularProgressView.swift */,
-				281FBFCF29143C0600D005F0 /* RecommendedCoursesHorizontalView.swift */,
-				281FBFD129143C6C00D005F0 /* CoursesByTagsGrid.swift */,
 			);
 			path = "Netlight UI Mockup";
 			sourceTree = "<group>";
@@ -74,6 +87,35 @@
 				281FBFC2291432FC00D005F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		281FBFD9291477CE00D005F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				281FBFD32914753C00D005F0 /* ModelData.swift */,
+				281FBFD72914761C00D005F0 /* MockModel.swift */,
+				281FBFD52914755B00D005F0 /* Course.swift */,
+				281FBFDE29147B9100D005F0 /* Tags.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		281FBFDA2914780C00D005F0 /* RecommendationScoller */ = {
+			isa = PBXGroup;
+			children = (
+				281FBFCF29143C0600D005F0 /* RecommendedCoursesHorizontalView.swift */,
+				281FBFDC2914785400D005F0 /* CourseRectangleView.swift */,
+			);
+			path = RecommendationScoller;
+			sourceTree = "<group>";
+		};
+		281FBFDB2914782300D005F0 /* CoursesByTag */ = {
+			isa = PBXGroup;
+			children = (
+				281FBFD129143C6C00D005F0 /* CoursesByTagsGridView.swift */,
+				281FBFE029147CE000D005F0 /* CourseByTagRectangleView.swift */,
+			);
+			path = CoursesByTag;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281FBFE129147CE000D005F0 /* CourseByTagRectangleView.swift in Sources */,
 				281FBFBE291432FC00D005F0 /* ContentView.swift in Sources */,
+				281FBFD62914755B00D005F0 /* Course.swift in Sources */,
 				281FBFCE29143B7600D005F0 /* CircularProgressView.swift in Sources */,
 				281FBFBC291432FC00D005F0 /* Netlight_UI_MockupApp.swift in Sources */,
 				281FBFD029143C0600D005F0 /* RecommendedCoursesHorizontalView.swift in Sources */,
-				281FBFD229143C6C00D005F0 /* CoursesByTagsGrid.swift in Sources */,
+				281FBFD82914761C00D005F0 /* MockModel.swift in Sources */,
+				281FBFD229143C6C00D005F0 /* CoursesByTagsGridView.swift in Sources */,
+				281FBFD42914753C00D005F0 /* ModelData.swift in Sources */,
+				281FBFDF29147B9100D005F0 /* Tags.swift in Sources */,
+				281FBFDD2914785400D005F0 /* CourseRectangleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

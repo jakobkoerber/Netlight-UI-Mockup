@@ -36,7 +36,7 @@ struct JourneyOverviewView: View {
                     Text("Open: \(model.courses.count-completedTasks)")
                         .frame(width: 120)
                 }
-                VStack(alignment: .leading, spacing: 5) {
+                LazyVStack(alignment: .leading, spacing: 5) {
                     ForEach(model.courses, id: \.id) { course in
                         JourneyEntryView(course: course)
                     }

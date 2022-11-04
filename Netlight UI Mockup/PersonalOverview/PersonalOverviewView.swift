@@ -11,13 +11,20 @@ struct PersonalOverviewView: View {
     
     @EnvironmentObject var model: ModelData
     
+    @Namespace var topID
+    
     var body: some View {
         NavigationStack {
-            ScrollView {
-                Spacer(minLength: 30)
-                ProgressNextTaskView()
-                RecommendedCoursesHorizontalView()
-                CoursesByTagsGridView()
+            ScrollViewReader { value in
+                ScrollView {
+                    Spacer(minLength: 30)
+                        .id(topID)
+                    ProgressNextTaskView()
+                    RecommendedCoursesHorizontalView()
+                    CoursesByTagsGridView()
+                }.onAppear {
+                    value.scrollTo(topID)
+                }
             }
             .navigationTitle("Personal Overview")
             .toolbar {

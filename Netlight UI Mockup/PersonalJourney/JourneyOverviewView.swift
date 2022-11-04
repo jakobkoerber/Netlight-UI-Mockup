@@ -11,6 +11,8 @@ struct JourneyOverviewView: View {
     
     @EnvironmentObject var model: ModelData
     
+    @Namespace var topID
+    
     let lineHeight: CGFloat = 64
     let lineWidth: CGFloat = 4
     
@@ -20,8 +22,10 @@ struct JourneyOverviewView: View {
     
     var body: some View {
         NavigationStack {
+            ScrollViewReader { value in
             ScrollView {
                 Spacer(minLength: 30)
+                    .id(topID)
                 CircularProgressView()
                     .frame(width: 200, height: 200)
                     .padding()
@@ -51,7 +55,10 @@ struct JourneyOverviewView: View {
                         Spacer()
                     }
                 )
+            }.onAppear {
+                value.scrollTo(topID)
             }
+        }
             .navigationTitle("Personal Journey")
         }
     }

@@ -22,10 +22,10 @@ struct CoursesByTagsGridView: View {
                     Text("View all")
                 }
             }
-            LazyVGrid(columns: [GridItem(spacing: 7), GridItem()], spacing: 4) {
+            LazyVGrid(columns: [GridItem(spacing: 7), GridItem()], spacing: 11) {
                 ForEach(model.tags, id: \.id) { tag in
                    CourseByTagRectangleView(tag: tag)
-                        .frame(width: 180, height: 90)
+                        .frame(width: 172, height: 90)
                 }
             }
         }.padding()

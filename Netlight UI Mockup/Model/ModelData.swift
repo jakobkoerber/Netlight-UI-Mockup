@@ -10,8 +10,20 @@ import Foundation
 class ModelData: ObservableObject {
     
     @Published public private(set) var courses: [Course]
+    @Published public private(set) var tags: [Tag]
     
-    init(courses: [Course]) {
+    init(courses: [Course], tags: [Tag]) {
         self.courses = courses
+        self.tags = tags
+    }
+    
+    func calculateCompletedTasks() -> Int {
+        courses.reduce(0, {
+            if($1.status) {
+                return $0+1
+            } else {
+                return $0
+            }
+        })
     }
 }

@@ -13,11 +13,10 @@ struct CourseRectangleView: View {
     
     var body: some View {
         VStack {
-            Text("Image coming soon")
-                .foregroundColor(.white)
-                .font(.largeTitle)
+            Image(course.image)
+                .resizable()
                 .frame(width: 170, height: 170)
-                .background(Color("NetlightPurple"))
+                .cornerRadius(20)
             Text(course.name).fontWeight(.semibold)
             Text("\(course.heldBy), \(course.roleInstructor)").font(.system(size: 9))
         }

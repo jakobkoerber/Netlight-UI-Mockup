@@ -7,12 +7,6 @@
 
 import Foundation
 
-enum Tags: String {
-    case programmingLanguages = "Programming Languages"
-    case agileTranformation = "Agile Transformation"
-    case accounting = "Accounting"
-}
-
 struct Tag {
     
     var id: UUID

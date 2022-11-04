@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Netlight UI Mockup
 //
-//  Created by Jakob Paul Körber on 03.11.22.
+//  Created by Jakob Paul Körber on 04.11.22.
 //
 
 import SwiftUI
@@ -12,34 +12,22 @@ struct ContentView: View {
     @EnvironmentObject var model: ModelData
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                Spacer(minLength: 30)
-                CircularProgressNextTaskView()
-                RecommendedCoursesHorizontalView()
-                CoursesByTagsGridView()
+        TabView {
+            PersonalOverviewView().tabItem {
+                Label("Home", systemImage: "house")
             }
-            .navigationTitle("Personal Overview")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Button {
-                        
-                    } label: {
-                        Text("Logout").foregroundColor(Color("NetlightPurple"))
-                    }
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "person").foregroundColor(Color("NetlightPurple"))
-                    }
-                }
+            JourneyOverviewView().tabItem {
+                Label("Journey", systemImage: "graduationcap")
+            }
+            Text("Work in progress").tabItem {
+                Label("Notes", systemImage: "square.and.pencil")
+            }
+            Text("Work in progress").tabItem {
+                Label("Add", systemImage: "plus")
             }
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

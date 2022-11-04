@@ -19,7 +19,7 @@ struct RecommendedCoursesHorizontalView: View {
                 Button {
                     //view of all recommended courses
                 } label: {
-                    Text("View all").foregroundColor(Color("NetlightPurple"))
+                    Text("View all")
                 }
             }
             ScrollView(.horizontal) {

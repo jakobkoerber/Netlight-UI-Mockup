@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		281FBFBC291432FC00D005F0 /* Netlight_UI_MockupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFBB291432FC00D005F0 /* Netlight_UI_MockupApp.swift */; };
-		281FBFBE291432FC00D005F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFBD291432FC00D005F0 /* ContentView.swift */; };
+		281FBFBE291432FC00D005F0 /* PersonalOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFBD291432FC00D005F0 /* PersonalOverviewView.swift */; };
 		281FBFC0291432FC00D005F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281FBFBF291432FC00D005F0 /* Assets.xcassets */; };
 		281FBFC3291432FC00D005F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281FBFC2291432FC00D005F0 /* Preview Assets.xcassets */; };
-		281FBFCE29143B7600D005F0 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFCD29143B7600D005F0 /* CircularProgressView.swift */; };
+		281FBFCE29143B7600D005F0 /* ProgressNextTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFCD29143B7600D005F0 /* ProgressNextTaskView.swift */; };
 		281FBFD029143C0600D005F0 /* RecommendedCoursesHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFCF29143C0600D005F0 /* RecommendedCoursesHorizontalView.swift */; };
 		281FBFD229143C6C00D005F0 /* CoursesByTagsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD129143C6C00D005F0 /* CoursesByTagsGridView.swift */; };
 		281FBFD42914753C00D005F0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFD32914753C00D005F0 /* ModelData.swift */; };
@@ -20,15 +20,19 @@
 		281FBFDD2914785400D005F0 /* CourseRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFDC2914785400D005F0 /* CourseRectangleView.swift */; };
 		281FBFDF29147B9100D005F0 /* Tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFDE29147B9100D005F0 /* Tags.swift */; };
 		281FBFE129147CE000D005F0 /* CourseByTagRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281FBFE029147CE000D005F0 /* CourseByTagRectangleView.swift */; };
+		288A1B31291504C000C10F16 /* JourneyOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A1B30291504C000C10F16 /* JourneyOverviewView.swift */; };
+		288A1B332915089000C10F16 /* JourneyEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A1B322915089000C10F16 /* JourneyEntryView.swift */; };
+		288A1B3529150C0200C10F16 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A1B3429150C0200C10F16 /* CircularProgressView.swift */; };
+		288A1B3B291518E000C10F16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A1B3A291518DF00C10F16 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		281FBFB8291432FC00D005F0 /* Netlight UI Mockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netlight UI Mockup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		281FBFBB291432FC00D005F0 /* Netlight_UI_MockupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netlight_UI_MockupApp.swift; sourceTree = "<group>"; };
-		281FBFBD291432FC00D005F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		281FBFBD291432FC00D005F0 /* PersonalOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalOverviewView.swift; sourceTree = "<group>"; };
 		281FBFBF291432FC00D005F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281FBFC2291432FC00D005F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		281FBFCD29143B7600D005F0 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		281FBFCD29143B7600D005F0 /* ProgressNextTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressNextTaskView.swift; sourceTree = "<group>"; };
 		281FBFCF29143C0600D005F0 /* RecommendedCoursesHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCoursesHorizontalView.swift; sourceTree = "<group>"; };
 		281FBFD129143C6C00D005F0 /* CoursesByTagsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesByTagsGridView.swift; sourceTree = "<group>"; };
 		281FBFD32914753C00D005F0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -37,6 +41,10 @@
 		281FBFDC2914785400D005F0 /* CourseRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRectangleView.swift; sourceTree = "<group>"; };
 		281FBFDE29147B9100D005F0 /* Tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags.swift; sourceTree = "<group>"; };
 		281FBFE029147CE000D005F0 /* CourseByTagRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseByTagRectangleView.swift; sourceTree = "<group>"; };
+		288A1B30291504C000C10F16 /* JourneyOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyOverviewView.swift; sourceTree = "<group>"; };
+		288A1B322915089000C10F16 /* JourneyEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyEntryView.swift; sourceTree = "<group>"; };
+		288A1B3429150C0200C10F16 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		288A1B3A291518DF00C10F16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				281FBFBB291432FC00D005F0 /* Netlight_UI_MockupApp.swift */,
-				281FBFBD291432FC00D005F0 /* ContentView.swift */,
-				281FBFCD29143B7600D005F0 /* CircularProgressView.swift */,
+				288A1B3A291518DF00C10F16 /* ContentView.swift */,
+				288A1B3629150C0C00C10F16 /* GeneralItems */,
+				288A1B3929150C6500C10F16 /* PersonalOverview */,
+				288A1B2F291504A800C10F16 /* PersonalJourney */,
 				281FBFDA2914780C00D005F0 /* RecommendationScoller */,
 				281FBFDB2914782300D005F0 /* CoursesByTag */,
 				281FBFD9291477CE00D005F0 /* Model */,
@@ -116,6 +126,32 @@
 				281FBFE029147CE000D005F0 /* CourseByTagRectangleView.swift */,
 			);
 			path = CoursesByTag;
+			sourceTree = "<group>";
+		};
+		288A1B2F291504A800C10F16 /* PersonalJourney */ = {
+			isa = PBXGroup;
+			children = (
+				288A1B30291504C000C10F16 /* JourneyOverviewView.swift */,
+				288A1B322915089000C10F16 /* JourneyEntryView.swift */,
+			);
+			path = PersonalJourney;
+			sourceTree = "<group>";
+		};
+		288A1B3629150C0C00C10F16 /* GeneralItems */ = {
+			isa = PBXGroup;
+			children = (
+				288A1B3429150C0200C10F16 /* CircularProgressView.swift */,
+			);
+			path = GeneralItems;
+			sourceTree = "<group>";
+		};
+		288A1B3929150C6500C10F16 /* PersonalOverview */ = {
+			isa = PBXGroup;
+			children = (
+				281FBFBD291432FC00D005F0 /* PersonalOverviewView.swift */,
+				281FBFCD29143B7600D005F0 /* ProgressNextTaskView.swift */,
+			);
+			path = PersonalOverview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,16 +225,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				281FBFE129147CE000D005F0 /* CourseByTagRectangleView.swift in Sources */,
-				281FBFBE291432FC00D005F0 /* ContentView.swift in Sources */,
+				288A1B3529150C0200C10F16 /* CircularProgressView.swift in Sources */,
+				281FBFBE291432FC00D005F0 /* PersonalOverviewView.swift in Sources */,
 				281FBFD62914755B00D005F0 /* Course.swift in Sources */,
-				281FBFCE29143B7600D005F0 /* CircularProgressView.swift in Sources */,
+				281FBFCE29143B7600D005F0 /* ProgressNextTaskView.swift in Sources */,
 				281FBFBC291432FC00D005F0 /* Netlight_UI_MockupApp.swift in Sources */,
 				281FBFD029143C0600D005F0 /* RecommendedCoursesHorizontalView.swift in Sources */,
 				281FBFD82914761C00D005F0 /* MockModel.swift in Sources */,
 				281FBFD229143C6C00D005F0 /* CoursesByTagsGridView.swift in Sources */,
 				281FBFD42914753C00D005F0 /* ModelData.swift in Sources */,
 				281FBFDF29147B9100D005F0 /* Tags.swift in Sources */,
+				288A1B3B291518E000C10F16 /* ContentView.swift in Sources */,
+				288A1B31291504C000C10F16 /* JourneyOverviewView.swift in Sources */,
 				281FBFDD2914785400D005F0 /* CourseRectangleView.swift in Sources */,
+				288A1B332915089000C10F16 /* JourneyEntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
